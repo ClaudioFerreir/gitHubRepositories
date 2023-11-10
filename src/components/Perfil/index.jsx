@@ -1,4 +1,5 @@
-import './perfil.css'
+/* import './perfil.css' */
+import styles from './Perfil.module.css';
 
 const Perfil = () => {
   const usuario = {
@@ -7,10 +8,10 @@ const Perfil = () => {
   }
 
   return (
-    <div>
-      <img className="perfil-avatar" src={usuario.avatar} alt={usuario.nome} />
-      <h1 className="perfil-titulo">{usuario.nome}</h1>
-    </div>
+    <header className={styles.header}>
+      <img className={styles.avatar} src={usuario.avatar} alt={usuario.nome} />
+      <h1 className={styles.name}>{usuario.nome}</h1>
+    </header>
   )
 }
 

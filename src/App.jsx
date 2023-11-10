@@ -6,8 +6,8 @@ import Formulario from './components/Formulario/index'
 function App() {
   return (
     <>
-      <Formulario />
       <Perfil />
+      <Formulario />
       <ReposList />
     </>
   )

@@ -1,0 +1,35 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.itemName b, .itemLanguage b {
+  margin-right: 3px;
+}
+
+.itemLanguage {
+  margin-bottom: 8px;
+}
+
+.itemLink {
+  display: block;
+  justify-self: flex-end;
+  background-color: blue;
+  color: #fff;
+  text-decoration: none; 
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
