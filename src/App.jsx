@@ -1,10 +1,14 @@
 import './App.css'
+import ReposList from './components/ReposList/index'
+import Perfil from './components/Perfil/index'
+import Formulario from './components/Formulario/index'
 
 function App() {
   return (
     <>
-      <h1 className='App'>Ola React</h1>
-      <h2>Projeto com o React</h2>
+      <Formulario />
+      <Perfil />
+      <ReposList />
     </>
   )
 }
