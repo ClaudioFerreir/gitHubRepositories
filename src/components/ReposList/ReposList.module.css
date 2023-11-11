@@ -10,7 +10,7 @@
   justify-content: space-between;
   list-style: none;
   padding: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--corPrimariaLighten);
   border-radius: 5px;
   font-size: 12px;
 }
@@ -26,10 +26,11 @@
 .itemLink {
   display: block;
   justify-self: flex-end;
-  background-color: blue;
-  color: #fff;
+  background-color: var(--corPrimaria);
+  color: var(--corSecundaria);
   text-decoration: none; 
   text-align: center;
   padding: 5px;
   border-radius: 5px;
+  font-weight: bold;
 }

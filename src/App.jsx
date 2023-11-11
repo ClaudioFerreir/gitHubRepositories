@@ -1,14 +1,22 @@
+import React, { useState } from 'react'
+
 import './App.css'
 import ReposList from './components/ReposList/index'
 import Perfil from './components/Perfil/index'
-import Formulario from './components/Formulario/index'
 
 function App() {
+  const [nomeUsuario, setNomeUsuario] = useState('')
+
   return (
     <>
-      <Perfil />
-      <Formulario />
-      <ReposList />
+      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+
+      {nomeUsuario.length > 4 && (
+        <>
+          <Perfil nomeUsuario={nomeUsuario}/>
+          <ReposList nomeUsuario={nomeUsuario}/>
+        </>
+      )}
     </>
   )
 }

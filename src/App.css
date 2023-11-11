@@ -1,3 +1,10 @@
+:root {
+  --corPrimaria: rgb(9,9,121);
+  --corPrimariaLighten: rgb(9,9,121, 0.2);
+  --corSecundaria: #fff;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,3 +17,4 @@
   width: 100%;
   margin: 0 auto;
 }
+

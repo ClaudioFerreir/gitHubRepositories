@@ -1,16 +1,13 @@
-/* import './perfil.css' */
 import styles from './Perfil.module.css';
 
-const Perfil = () => {
-  const usuario = {
-    nome: "Claudio Ferreira", 
-    avatar: "https://github.com/claudioferreir.png"
-  }
+const Perfil = ({ nomeUsuario }) => {
 
   return (
     <header className={styles.header}>
-      <img className={styles.avatar} src={usuario.avatar} alt={usuario.nome} />
-      <h1 className={styles.name}>{usuario.nome}</h1>
+      <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`} />
+      <h1 className={styles.name}>
+        {nomeUsuario}
+      </h1>
     </header>
   )
 }
